@@ -10,3 +10,83 @@ body {
 }
 
 /* Add styles here! */
+
+:root {
+  --color-primary: hsl(160deg, 100%, 30%);
+  --color-secondary-light: hsl(45deg, 100%, 50%);
+  --color-secondary-dark: hsl(45deg, 100%, 40%);
+  --color-black: hsl(0deg, 0%, 0%);
+  --color-darkest-grey: hsl(0deg, 0%, 10%);
+  --color-dark-grey: hsl(0deg, 0%, 30%);
+  --color-grey: hsl(0deg, 0%, 40%);
+  --color-light-grey: hsl(0deg, 0%, 60%);
+  --color-white: hsl(0deg, 0%, 100%);
+}
+
+body {
+  background-color: var(--color-light-grey);
+  line-height: 1.5;
+}
+
+.max-width-wrapper {
+  margin: auto;
+  max-width: 700px;
+}
+
+h1,
+h2 {
+  line-height: 1.2;
+  margin: 0;
+}
+
+p {
+  margin: 0 0 1em 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+/* HEADER */
+header {
+  background-color: var(--color-white);
+  border-bottom: 8px solid var(--color-grey);
+  padding: 128px 0 64px;
+}
+
+header .intro-chunk {
+  font-size: 1.5rem;
+  max-width: 500px;
+  padding: 0 24px;
+}
+
+header .intro-chunk .title {
+  font-size: 2rem;
+  margin-bottom: 64px;
+}
+
+header .intro-chunk p strong {
+  color: var(--color-primary);
+}
+
+/* MAIN */
+main {
+  font-size: 1.25rem;
+  padding: 96px 0;
+}
+
+main .card {
+  background-color: var(--color-white);
+  border-bottom: 8px solid var(--color-grey);
+  padding: 24px;
+}
+
+main .card .indented-heading {
+  background-color: var(--color-secondary-light);
+  border-bottom: 8px solid var(--color-secondary-dark);
+  font-size: 1.5rem;
+  margin: -16px 0 24px -40px;
+  padding: 24px 40px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
